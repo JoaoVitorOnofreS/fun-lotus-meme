@@ -6,7 +6,7 @@ const membros = [
         id: 1,
         nome: "João KKKKKKK",
         desc:'Aleatório, burro kkkk toca punhheta, pescador',
-        imagem: 'batata.jpg',
+        imagem: 'joao.jpg',
         
     
     },
@@ -14,14 +14,14 @@ const membros = [
         id: 2,
         nome: "Douguito",
         desc:'Bebado alemão kkkkk coiznheiro',
-        imagem: 'batata.jpg',
+        imagem: 'doug.jpg',
 
     },
     {
         id: 3,
         nome: "Babis",
         desc:'Cantorinha kkkkk',
-        imagem: 'batata.jpg',
+        imagem: 'babi.jpg',
 
     },
     {
@@ -40,6 +40,8 @@ console.log(membros)
 function quemEuSou() {
     
     const num = Math.floor(Math.random() * membros.length)
+    const audio = new Audio('/audio/som.mp3')
+    audio.play()
     const membro = membros[num]
     const nome = document.querySelector('.nome')
     const desc = document.querySelector('.desc')
